@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { uuid } from "uuidv4";
 import api from "./api/contacts";
-import "./App.css";
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
@@ -16,12 +15,6 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
-  // Return contacts
-  const retrieveContacts = async () => {
-    const response = await api.get("/contacts");
-    return response.data;
-  };
-
   const addContactHandler = async (contact) => {
     const request = {
       id: uuid(),
@@ -29,16 +22,6 @@ function App() {
     };
     const response = await api.post("/contacts", request);
     setContacts([...contacts, response.data]);
-  };
-
-  const updateContactHandler = async (contact) => {
-    const response = await api.put(`/contacts/${contact.id}`, contact);
-    const { id, name, email } = response.data;
-    setContacts(
-      contacts.map((contact) => {
-        return contact.id === id ? { ...response.data } : contact;
-      })
-    );
   };
 
   const removeContactHandler = async (id) => {
@@ -85,8 +68,9 @@ function App() {
   }, [contacts]);
 
   return (
-    <div className="ui container">
+    <div>
       <Router>
+        <Header />
         <Switch>
           <Route
             path="/"
@@ -107,18 +91,8 @@ function App() {
               <AddContact {...props} addContactHandler={addContactHandler} />
             )}
           />
-          <Route
-            path="/edit"
-            render={(props) => (
-              <EditContact
-                {...props}
-                updateContactHandler={updateContactHandler}
-              />
-            )}
-          />
           <Route path="/contact/:id" component={ContactDetail} />
         </Switch>
-        <Header />
       </Router>
     </div>
   );

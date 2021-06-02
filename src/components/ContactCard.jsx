@@ -1,43 +1,41 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import profilePic from "../images/userprofile.jpg";
 
 function ContactCard(props) {
   const { id, name, email } = props.contact;
 
   return (
     <div>
-      <div class="ui relaxed divided list">
-        <div class="item">
-          <i class="large github middle aligned icon"></i>
-          <div class="content">
+      <div class="container mx-auto max-w-screen flex flex-col space-y-4 justify-center items-center pt-2">
+        <div class="bg-gray-900 w-7/12 flex items-center p-2 rounded-xl shadow hover:bg-gray-800  transition duration-200">
+          <div class="relative flex items-center space-x-4">
+            <img
+              src={profilePic}
+              alt="My profile"
+              class="w-16 h-16 rounded-full"
+            />
+            <span class="absolute h-4 w-4 bg-green-400 rounded-full bottom-0 right-0 border-2 border-white"></span>
+          </div>
+
+          <div class="flex-grow p-3">
             <Link
               to={{
                 pathname: `/contact/${id}`,
                 state: { contact: props.contact },
               }}
             >
-              <a class="header">{name}</a>
-              <div class="description">{email}</div>
+              <div class="font-semibold text-gray-200">{name}</div>
+              <div class="text-sm text-gray-300">{email}</div>
             </Link>
           </div>
-
-          {/* DELETE MODAL, "ARE YOU SURE U WANT TO DELETE IT?" */}
-          <i
-            className="trash alternate outline icon"
-            style={{ color: "red", marginTop: "7px", marginLeft: "10px" }}
-            onClick={() => props.clickHandler(id)}
-          ></i>
-          <Link
-            to={{
-              pathname: `/edit`,
-              state: { contact: props.contact },
-            }}
-          >
+          <div class="p-2">
+            {/* create delete modal here */}
             <i
-              className="edit alternate outline icon"
-              style={{ color: "purple", marginTop: "7px" }}
+              className="trash icon text-red-600 cursor-pointer transform hover:scale-125 transition duration-300"
+              onClick={() => props.clickHandler(id)}
             ></i>
-          </Link>
+          </div>
         </div>
       </div>
     </div>
