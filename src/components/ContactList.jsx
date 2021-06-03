@@ -23,7 +23,7 @@ function ContactList(props) {
   };
 
   return (
-    <div className="dark:bg-gray-700 h-screen">
+    <div className="dark:bg-gray-700 h-screen overflow-y-auto overflow-x-hidden pb-10">
       <div>
         <div class="container flex text-center">
           <div class="relative">

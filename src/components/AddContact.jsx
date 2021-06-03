@@ -19,7 +19,7 @@ class AddContact extends React.Component {
 
   render() {
     return (
-      <div className="ui main">
+      <div className="ui main" style={{ minHeight: "80vh" }}>
         <br />
         <br />
         <h2>Add Contact</h2>

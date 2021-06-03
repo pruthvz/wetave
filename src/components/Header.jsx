@@ -13,20 +13,22 @@ const Header = () => {
       >
         <div class="container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap">
           <div class="mr-4 md:mr-8">
-            <a href="#" rel="home">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-10 h-10 text-purple-600"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
+            <Link to="/">
+              <a rel="home">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10 text-purple-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </Link>
           </div>
           <div class="ml-auto md:hidden">
             <button
@@ -52,22 +54,24 @@ const Header = () => {
           <div class="w-full md:w-auto md:flex-grow md:flex md:items-center">
             <ul class="flex flex-col mt-4 -mx-4 pt-4 md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:mr-4 lg:mr-8 md:border-0">
               <li>
-                <a
-                  class="block px-4 py-1 md:p-2 lg:px-4 hover:text-gray-400 transition duration-200 text-purple-600"
-                  href="#"
-                  title="Link"
-                >
-                  Homepage
-                </a>
+                <Link to="/">
+                  <a
+                    class="block px-4 py-1 md:p-2 lg:px-4 hover:text-gray-400 transition duration-200 text-purple-600"
+                    title="Link"
+                  >
+                    Homepage
+                  </a>
+                </Link>
               </li>
               <li>
-                <a
-                  class="block px-4 py-1 md:p-2 lg:px-4  hover:text-gray-400 transition duration-200"
-                  href="#"
-                  title="Active Link"
-                >
-                  Dummy Link
-                </a>
+                <Link to="/dummy">
+                  <a
+                    class="block px-4 py-1 md:p-2 lg:px-4  hover:text-gray-400 transition duration-200"
+                    title="Active Link"
+                  >
+                    Dummy Link
+                  </a>
+                </Link>
               </li>
             </ul>
             <ul class="flex flex-col mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0">

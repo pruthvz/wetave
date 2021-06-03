@@ -8,7 +8,7 @@ function ContactCard(props) {
   return (
     <div>
       <div class="container mx-auto max-w-screen flex flex-col space-y-4 justify-center items-center pt-2">
-        <div class="bg-gray-900 w-7/12 flex items-center p-2 rounded-xl shadow hover:bg-gray-800  transition duration-200">
+        <div class="bg-gray-300 dark:bg-gray-900 w-7/12 flex items-center p-2 rounded-xl shadow hover:bg-gray-500 dark:hover:bg-gray-800  transition duration-200 group">
           <div class="relative flex items-center space-x-4">
             <img
               src={profilePic}
@@ -25,8 +25,12 @@ function ContactCard(props) {
                 state: { contact: props.contact },
               }}
             >
-              <div class="font-semibold text-gray-200">{name}</div>
-              <div class="text-sm text-gray-300">{email}</div>
+              <div class="font-semibold text-gray-900 dark:text-gray-200 group-hover:text-gray-100 ">
+                {name}
+              </div>
+              <div class="text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-200">
+                {email}
+              </div>
             </Link>
           </div>
           <div class="p-2">

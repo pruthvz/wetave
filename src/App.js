@@ -7,6 +7,8 @@ import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
 import ContactDetail from "./components/ContactDetail";
 import EditContact from "./components/EditContact";
+import Footer from "./components/Footer";
+import DummyLink from "./components/DummyLink";
 
 function App() {
   // passing contacts
@@ -92,7 +94,9 @@ function App() {
             )}
           />
           <Route path="/contact/:id" component={ContactDetail} />
+          <Route path="/dummy" component={DummyLink} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
