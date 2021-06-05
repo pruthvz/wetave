@@ -21,7 +21,7 @@ function ContactCard(props) {
           <div class="flex-grow p-3">
             <Link
               to={{
-                pathname: `/contact/${id}`,
+                pathname: `/wetave/contact/${id}`,
                 state: { contact: props.contact },
               }}
             >
