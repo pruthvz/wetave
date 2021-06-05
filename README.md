@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Projects
 
-This was one of my project, that had most of the react components and syntax covered.
+This was one of my project, that had most of the react components and syntax covered. wetave, is a project where you can store you contact details, this was a fun project where I experimented with Tailwind CSS darkmode feature.
 
 ## My Projects:
 
