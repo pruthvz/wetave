@@ -42,7 +42,7 @@ function ContactDetail(props) {
 
             <div className="center-div pt-10">
               <center>
-                <Link to="/">
+                <Link to="/wetave/">
                   <button className="ui p-3 pl-5 pr-5 rounded-lg text-white bg-purple-600 hover:bg-purple-800 outline-none focus:outline-none">
                     View all Contacts
                   </button>

@@ -75,7 +75,7 @@ function App() {
         <Header />
         <Switch>
           <Route
-            path="/"
+            path="/wetave/"
             exact
             render={(props) => (
               <ContactList
@@ -88,13 +88,13 @@ function App() {
             )}
           />
           <Route
-            path="/add"
+            path="/wetave/add"
             render={(props) => (
               <AddContact {...props} addContactHandler={addContactHandler} />
             )}
           />
-          <Route path="/contact/:id" component={ContactDetail} />
-          <Route path="/dummy" component={DummyLink} />
+          <Route path="/wetave/contact/:id" component={ContactDetail} />
+          <Route path="/wetave/dummy" component={DummyLink} />
         </Switch>
         <Footer />
       </Router>

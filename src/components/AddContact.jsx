@@ -15,7 +15,7 @@ class AddContact extends React.Component {
     }
     this.props.addContactHandler(this.state);
     this.setState({ name: "", email: "" });
-    this.props.history.push("/");
+    this.props.history.push("/wetave/");
   };
 
   render() {
@@ -87,7 +87,7 @@ class AddContact extends React.Component {
                 </button>
 
                 <div class="sm:flex sm:flex-wrap mt-8 sm:mb-4 text-sm text-center">
-                  <Link to="/">
+                  <Link to="/wetave/">
                     <a class="flex-2 underline dark:text-white">
                       View Contacts
                     </a>

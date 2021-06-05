@@ -13,7 +13,7 @@ const Header = () => {
       >
         <div class="container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap">
           <div class="mr-4 md:mr-8">
-            <Link to="/">
+            <Link to="/wetave/">
               <a rel="home">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const Header = () => {
           <div class="w-full md:w-auto md:flex-grow md:flex md:items-center">
             <ul class="flex flex-col mt-4 -mx-4 pt-4 md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:mr-4 lg:mr-8 md:border-0">
               <li>
-                <Link to="/">
+                <Link to="/wetave/">
                   <a
                     class="block px-4 py-1 md:p-2 lg:px-4 hover:text-gray-500 transition duration-200 text-purple-600"
                     title="Link"
@@ -64,7 +64,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/dummy">
+                <Link to="/wetave/dummy">
                   <a
                     class="block px-4 py-1 md:p-2 lg:px-4  hover:text-gray-500 transition duration-200"
                     title="Active Link"
@@ -81,7 +81,7 @@ const Header = () => {
                   id="nav-content"
                 >
                   <div class="auth flex items-center w-full md:w-full p-5 md:p-2">
-                    <Link to="/add">
+                    <Link to="/wetave/add">
                       <button class="bg-purple-600 text-gray-100 font-bold p-3 pl-10 pr-10 rounded hover:bg-purple-500 dark:bg-gray-700 dark:hover:bg-purple-700">
                         Add Contact
                       </button>
