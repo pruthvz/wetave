@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/wetave/static/css/main.83a11e15.chunk.css",
-    "main.js": "/wetave/static/js/main.105e10c2.chunk.js",
-    "main.js.map": "/wetave/static/js/main.105e10c2.chunk.js.map",
+    "main.js": "/wetave/static/js/main.e08c5bb7.chunk.js",
+    "main.js.map": "/wetave/static/js/main.e08c5bb7.chunk.js.map",
     "runtime-main.js": "/wetave/static/js/runtime-main.da788d4a.js",
     "runtime-main.js.map": "/wetave/static/js/runtime-main.da788d4a.js.map",
     "static/js/2.ff7d0d52.chunk.js": "/wetave/static/js/2.ff7d0d52.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.da788d4a.js",
     "static/js/2.ff7d0d52.chunk.js",
     "static/css/main.83a11e15.chunk.css",
-    "static/js/main.105e10c2.chunk.js"
+    "static/js/main.e08c5bb7.chunk.js"
   ]
 }
