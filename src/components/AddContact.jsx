@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // CLASS METHOD
 class AddContact extends React.Component {
@@ -21,6 +22,11 @@ class AddContact extends React.Component {
   render() {
     return (
       <div className="ui main" style={{ minHeight: "70vh" }}>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>wetave - add contact</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
         <div class="flex flex-col h-screen bg-gray-200 dark:bg-gray-700 transiton duration-200">
           <div class="grid place-items-center mx-2 my-20 sm:my-auto">
             <div

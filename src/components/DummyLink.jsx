@@ -2,6 +2,7 @@ import React from "react";
 import oopsDev from "../images/oopsdev.png";
 import spatepate from "../images/spatepate.png";
 import weeeProject from "../images/weee.png";
+import { Helmet } from "react-helmet";
 
 function DummyLink() {
   return (
@@ -9,6 +10,11 @@ function DummyLink() {
       className="main dark:bg-gray-800 bg-gray-200"
       style={{ paddingTop: "120px", paddingBottom: "310px" }}
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>wetave - fun projects</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <h2 class="text-gray-800 dark:text-gray-200 text-4xl text-center pb-10">
         Fun Projects
       </h2>
