@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/wetave/static/css/main.83a11e15.chunk.css",
-    "main.js": "/wetave/static/js/main.44478f5d.chunk.js",
-    "main.js.map": "/wetave/static/js/main.44478f5d.chunk.js.map",
+    "main.js": "/wetave/static/js/main.105e10c2.chunk.js",
+    "main.js.map": "/wetave/static/js/main.105e10c2.chunk.js.map",
     "runtime-main.js": "/wetave/static/js/runtime-main.da788d4a.js",
     "runtime-main.js.map": "/wetave/static/js/runtime-main.da788d4a.js.map",
-    "static/js/2.becd40ca.chunk.js": "/wetave/static/js/2.becd40ca.chunk.js",
-    "static/js/2.becd40ca.chunk.js.map": "/wetave/static/js/2.becd40ca.chunk.js.map",
+    "static/js/2.ff7d0d52.chunk.js": "/wetave/static/js/2.ff7d0d52.chunk.js",
+    "static/js/2.ff7d0d52.chunk.js.map": "/wetave/static/js/2.ff7d0d52.chunk.js.map",
     "index.html": "/wetave/index.html",
     "static/css/main.83a11e15.chunk.css.map": "/wetave/static/css/main.83a11e15.chunk.css.map",
-    "static/js/2.becd40ca.chunk.js.LICENSE.txt": "/wetave/static/js/2.becd40ca.chunk.js.LICENSE.txt",
+    "static/js/2.ff7d0d52.chunk.js.LICENSE.txt": "/wetave/static/js/2.ff7d0d52.chunk.js.LICENSE.txt",
     "static/media/oopsdev.977ce497.png": "/wetave/static/media/oopsdev.977ce497.png",
     "static/media/spatepate.fd73e3f1.png": "/wetave/static/media/spatepate.fd73e3f1.png",
     "static/media/user.f63623d9.jpg": "/wetave/static/media/user.f63623d9.jpg",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.da788d4a.js",
-    "static/js/2.becd40ca.chunk.js",
+    "static/js/2.ff7d0d52.chunk.js",
     "static/css/main.83a11e15.chunk.css",
-    "static/js/main.44478f5d.chunk.js"
+    "static/js/main.105e10c2.chunk.js"
   ]
 }
