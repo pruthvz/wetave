@@ -8,7 +8,7 @@ const Header = () => {
     <div>
       <div className="fixed top-0 p-5"></div>
       <nav
-        class="bg-gray-200 dark:bg-gray-800 shadow dark:text-white"
+        class="bg-gray-300 dark:bg-gray-800 shadow dark:text-white"
         role="navigation"
       >
         <div class="container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap">
@@ -17,7 +17,7 @@ const Header = () => {
               <a rel="home">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-10 h-10 text-purple-600"
+                  class="w-10 h-10 text-purple-600 animate-bounce "
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -56,7 +56,7 @@ const Header = () => {
               <li>
                 <Link to="/">
                   <a
-                    class="block px-4 py-1 md:p-2 lg:px-4 hover:text-gray-400 transition duration-200 text-purple-600"
+                    class="block px-4 py-1 md:p-2 lg:px-4 hover:text-gray-500 transition duration-200 text-purple-600"
                     title="Link"
                   >
                     Homepage
@@ -66,7 +66,7 @@ const Header = () => {
               <li>
                 <Link to="/dummy">
                   <a
-                    class="block px-4 py-1 md:p-2 lg:px-4  hover:text-gray-400 transition duration-200"
+                    class="block px-4 py-1 md:p-2 lg:px-4  hover:text-gray-500 transition duration-200"
                     title="Active Link"
                   >
                     Dummy Link

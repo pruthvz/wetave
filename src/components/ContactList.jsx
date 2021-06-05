@@ -44,9 +44,13 @@ function ContactList(props) {
       <br />
 
       <div className="ui celled list">
-        {renderContactList.length > 0
-          ? renderContactList
-          : "No Contacts available"}
+        {renderContactList.length > 0 ? (
+          renderContactList
+        ) : (
+          <h1 class="text-gray-300 text-center text-2xl">
+            No Contacts available..
+          </h1>
+        )}
       </div>
     </div>
   );
