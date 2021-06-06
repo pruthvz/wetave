@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { uuid } from "uuidv4";
 import api from "./api/contacts";
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
 import ContactDetail from "./components/ContactDetail";
-import EditContact from "./components/EditContact";
+// import EditContact from "./components/EditContact";
 import Footer from "./components/Footer";
 import DummyLink from "./components/DummyLink";
 

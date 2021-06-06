@@ -13,7 +13,6 @@ function DummyLink() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>wetave - fun projects</title>
-        <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <h2 class="text-gray-800 dark:text-gray-200 text-4xl text-center pb-10">
         Fun Projects
@@ -21,13 +20,14 @@ function DummyLink() {
       <div class="flex flex-wrap">
         <div class="md:w-1/2 lg:w-1/3 py-4 px-4 transform hover:scale-105 transition duration-300">
           <div class=" ">
-            <a href="https://ooopsdev.com/#/" target="_blank">
+            <a href="https://ooopsdev.com/#/" target="_blank" rel="noreferrer">
               <div class="bg-gray-100 dark:bg-gray-700 dark:text-gray-300 relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
                 <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white bg-purple-600 px-2 py-1 bg-orange-500 ">
                   Project 1
                 </div>
                 <img
                   src={oopsDev}
+                  alt="oopsdev project"
                   class="h-32 rounded-lg w-full object-cover"
                 />
                 <div class="flex justify-center">
@@ -54,13 +54,18 @@ function DummyLink() {
 
         <div class="md:w-1/2 lg:w-1/3 py-4 px-4 transform hover:scale-105 transition duration-300">
           <div class=" ">
-            <a href="https://pruthvz.github.io/spatepate/" target="_blank">
+            <a
+              href="https://pruthvz.github.io/spatepate/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div class="bg-gray-100 dark:bg-gray-700 dark:text-gray-300 relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
                 <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white bg-purple-600 px-2 py-1 bg-orange-500 ">
                   Project 2
                 </div>
                 <img
                   src={spatepate}
+                  alt="spatepate project"
                   class="h-32 rounded-lg w-full object-cover"
                 />
                 <div class="flex justify-center">
@@ -88,13 +93,18 @@ function DummyLink() {
 
         <div class="md:w-1/2 lg:w-1/3 py-4 px-4 transform hover:scale-105 transition duration-300">
           <div class=" ">
-            <a href="https://project-weee.vercel.app/" target="_blank">
+            <a
+              href="https://project-weee.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div class="bg-gray-100 dark:bg-gray-700 dark:text-gray-300 relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
                 <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white bg-purple-600 px-2 py-1 bg-orange-500 ">
                   Project 3
                 </div>
                 <img
                   src={weeeProject}
+                  alt="wee project"
                   class="h-32 rounded-lg w-full object-cover"
                 />
                 <div class="flex justify-center">
